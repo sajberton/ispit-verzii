@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <div class="container">
+                <h1>BOOKS LIBRARY</h1>
+                
+                <div class="row" style="text-align:center; margin:10px 0"> 
+                    <div class="col-5">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-dark active">
+                                <input type="radio" name="minmax" value="0" autocomplete="off" checked> Novels
+                            </label>
+                            <label class="btn btn-dark">
+                                <input type="radio" name="minmax" value="1" autocomplete="off"> Anthology
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text label-dark" for="sort">Sort By</label>
+                            </div>
+                            <select class="custom-select" id="sort">
+                                <option selected>Choose...</option>
+                                <option value="1">Title</option>
+                                <option value="2">Author</option>
+                                <option value="3">Publisher</option>
+                                <option value="4">Release Year</option>
+                                <option value="5">Length of Pages</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Publisher</th>
+                            <th>Release Year</th>
+                            <th>Length of Pages</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+        
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-dark btn-lg btn-block" id="pull">Get Data</button>
+        
+            </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

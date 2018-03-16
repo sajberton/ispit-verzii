@@ -1,0 +1,125 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+background-color: black;
+color: wheat;
+}
+
+button{
+    height: 30px;
+    background-color: rgb(25, 82, 204);
+    border: 2px solid rgb(25, 82, 204);
+    color: white;
+    border-radius: 3px;
+    outline:none;
+}
+input{
+        display: block;
+        margin: 2px;
+        border: 2px solid #ac7b11;
+        background-color: rgba(44, 42, 42, 0.863);
+        color: #bebe35;
+    
+    }
+::placeholder { 
+    color: #bebe35;
+}
+th{
+    height: 30px;
+    width: 100px;
+}
+td{
+    height: 30px;
+    width: 100px;
+}
+.td-kind{
+    width: 30px; 
+    text-align: center;
+}
+
+td {
+    background-color: #794408;
+}
+
+td:nth-child(odd) {
+    background-color: #486d79;
+}
+
+#console{
+	color:#ffffff;
+	background:rgb(35, 153, 137);
+	border-radius:10px;
+    height:30px;
+    width: 30px;
+	transition:-webkit-transform 2s, color 2s, background 2s;
+}
+#console:hover{
+	transform: rotate(360deg);
+    color:black;
+    background:#ddce00;
+}
+#Get_Data{
+    transition: color 5s, background 5s;
+}
+#Get_Data:hover{
+    background: orange;
+   color: black;
+}
+
+.save{
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    width:100%;
+
+    background-color: #c2cf04;
+    border: 2px solid #c2cf04;
+}
+
+.del, .edit{
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #10b133;
+    border: 2px solid #10b133;
+    width: 50%;
+    height: 100%;
+
+}
+.del{
+    border: 2px solid #d62b2b;
+    background-color: #d62b2b;
+}
+
+td input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+}
+.in_series, .in_series_number{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin:0px;
+
+}
+
+
+
+#local_storage{
+	color:#ffffff;
+	background:rgb(153, 35, 124);
+	border-radius:10px;
+    height:30px;
+    width: 30px;
+	transition:-webkit-transform 2s, color 2s, background 2s;
+}
+#local_storage:hover{
+	transform: rotate(360deg);
+    color:black;
+    background:#00dd0b;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="examStyle.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div id="content" style="display:none">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corporis?
+            Deserunt adipisci ex repellendus sapiente quod quos, autem, inventore, 
+            quas dolores cumque saepe quibusdam nesciunt mollitia ipsam ad facilis. Quas.
+        </div>
+    </div>
+    <button type="button" class="slide-up" >Back to Main</button>
+    <button type="button" class="slide-down">Books Preview</button>
+    
+    <div class="container" class="d-flex">
+        <button type="button" id="novel">Novel</button>
+        <button type="button" id="anthology">Anthology</button>
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <select class="custom-select mr-sm-2" id="sort">
+                <option selected>Choose...</option>
+                <option value="1">Kind</option>
+                <option value="2">Title</option>
+                <option value="3">Author</option>
+                <option value="4">Publisher</option>
+                <option value="5">Release Year</option>
+                <option value="6">Length</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" id="prev">Previous</button>
+        <button type="button" id="next">Next</button>
+        <button id="console">:)</button>
+        <button id="local_storage">xD</button>
+        </br>
+        
+        </br>
+        <button id="getData" class="btn btn-success" >Get Data</button>
+                
+        <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Kind</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Release Year</th>
+                    <th>Length</th>
+                    <th>Series</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>Preview</th> 
+                </tr>
+            </thead>
+            <tbody id="myBody">
+                
+            </tbody>
+        </table>
+        </div>
+      
+        <form name=form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                    <label for="kindAdd">Kind</label>
+                    <input type="text" class="form-control" id="kindAdd" placeholder="Kind"  required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid publisher.
+                    </div>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for= id="titleAdd">Title</label>
+                    <input type="text" class="form-control" id="titleAdd" placeholder="Title"  required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="authorAdd">Author</label>
+                    <input type="text" class="form-control" id="authorAdd" placeholder="Author" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="valid-tooltip">
+                       Looks good!
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                    <label for="publisherAdd">Publisher</label>
+                    <input type="text" class="form-control" id="publisherAdd" placeholder="Publisher">
+                    <div class="invalid-tooltip">
+                      Please provide a valid publisher.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="yearAdd" >Release Year</label>
+                    <input type="text" class="form-control" id="yearAdd"  placeholder="Release Year" >
+                    <div class="invalid-tooltip">
+                      Please provide a valid year.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="lengthAdd">Length</label>
+                    <input type="text" class="form-control" id="lengthAdd" placeholder="Length" >
+                    <div class="invalid-tooltip">
+                      Please provide a valid length.
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary mb-3" id="insert" type="submit">Submit Form</button>
+                
+                <button class="btn btn-danger mb-3" type="reset" id="configreset" value="reset">Reset Form</button>   
+                    
+        </form>
+         
+    </div>
+   
+    <div id="myBox" class="card text-center w-75">
+        <ul class="li" class="card-text"></ul>
+    </div>
+    <a href="preview/preview.html"></a>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="examScript.js"></script>
+</body>
+</html>
