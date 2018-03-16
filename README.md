@@ -1,0 +1,2 @@
+# ispit-verzii
+za ispitot
